@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>new</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="book2"><p id="myParagraph">This is the first text.</p></div>
+
+    
+    
+    <script>
+      let toggled = false;
+      let bookButton = document.getElementById("bookButton")
+    
+      function toggleText() {
+        const paragraph = document.getElementById("myParagraph");
+    
+        if (toggled) {
+          paragraph.innerText = "This is the first text.";
+        } else {
+          paragraph.innerText = "Now it's the second text!";
+        }
+    
+        toggled = !toggled;
+      }
+    </script>
+</body>
+<footer><div class="button-div">
+        <button id="bookButton" onclick="toggleText()">Toggle Text</button>
+    </div></footer>
+</html>
