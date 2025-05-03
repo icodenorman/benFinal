@@ -9,19 +9,24 @@
 </head>
 
 <body>
-    <div class="book2"><p id="myParagraph">This is the first text.</p></div>
+  <audio loop autoplay>
+    <source src="forestsound.mp3" type="audio/mpeg">
+  </audio>
+  
+    <div class="bookheader"> <p id="header"> Hydra tales </p></div>
+    <div class="book2"><p id="myParagraph"></p></div>
 
     
     
     <script>
       let toggled = false;
-      let bookButton = document.getElementById("bookButton")
+      let bookButton = document.getElementById("bookButton");
     
       function toggleText() {
         const paragraph = document.getElementById("myParagraph");
     
         if (toggled) {
-          paragraph.innerText = "This is the first text.";
+          paragraph.innerText = "the Hydra was not in its size or its poison—it was in its ability to regenerate. For every head that was severed from its body, two more would grow in its place, each stronger and deadlier than the last. No mortal had ever managed to defeat the Hydra, and itsreign of terror seemed endless. It made its lair in the swamps of Lerna, a murky and foul-smelling marshland where few dared to tread. The very ground was tainted by the Hydra's poison, and the waters of the swamp had turned black and fetid, killing any who drank from them.The people of the nearby city of Argos lived in constant fear of the beast. It would emerge from its lair to raid the surrounding villages, devouring livestock and spreading death and decay wherever it went. Crops withered in its presence, and the land itself seemed to sickenunder the weight of its malign influence. It was said that the Hydra was a curse upon the land, sent by the goddess Hera to punish the people of Argos for their hubris. None could stand against it, and those who tried were never seen again.The people prayed to the gods for deliverance, but their pleas went unanswered. Hera, the queen of the gods, took great pleasure in the suffering of the people, for it was she who had sent the Hydra to Lerna as part of her vendetta against Heracles, the son of Zeus. Heracles wasa demigod, born of Zeus and a mortal woman named Alcmene. His very existence was an insult to Hera, and she sought to make his life as difficult as possible. The Hydra was meant to be an insurmountable obstacle in Heracles' path, one that would finally lead to his downfall.But Heracles was no ordinary man. He was the strongest of all mortals, gifted with extraordinary power by his father Zeus. From a young age, he had been destined for greatness, and his feats of strength and bravery were already the stuff of legend. He had strangled serpents with hisbare hands as a child, and as a man, he had defeated fearsome beasts and completed impossible tasks. Yet despite all his strength, Heracles was not invincible. He had been driven mad by Hera's machinations, and in a fit of madness, he had killed his own wife and children.In his grief and guilt, Heracles sought redemption. He turned to the oracle at Delphi, who told him that he must serve King Eurystheus of Tiryns for twelve years and complete twelve labors as penance for his sins. These labors were designed to be impossible, for Eurystheus hated Heracles and wanted him to fail. The second of these labors was to slay the Hydra, a task that no mortal had ever accomplished.";
         } else {
           paragraph.innerText = "Now it's the second text!";
         }
@@ -31,6 +36,13 @@
     </script>
 </body>
 <footer><div class="button-div">
-        <button id="bookButton" onclick="toggleText()">Toggle Text</button>
-    </div></footer>
+        <button id="bookButton" onclick="toggleText()">Next page</button>
+    </div>
+
+<div class="back-button"><button id="bookButton" onclick="document.location='index.html'">Back to home page.</button></div>
+
+</footer>
+
+
+
 </html>

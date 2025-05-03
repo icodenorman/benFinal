@@ -14,23 +14,43 @@ body {
 .button-div {
     text-align: center;
     position: fixed;
-    left: 43.5%;
+    left: 80%;
     bottom: 10%;
 
+}
+
+.bookheader {
+    text-align: center;
+    position: fixed;
+    left: 10%;
+    top: 1%;
+    font-family: "papyrus";
+    font-size: 40px;
+    color: rgb(53, 51, 51);
 }
 
 .book2 {
     text-align: center;
     position: fixed;
-    left: 10%;
+    left: 5%;
     top: 15%;
     color: rgb(53, 51, 51);
     font-family: "papyrus";
-    font-size: 40px;
+    font-size: 20px;
 }
 
 #bookButton {
-    color: rgb(211, 90, 90);  
+    color: rgb(255, 188, 188);  
+    background-color: rgb(52, 134, 228);
+    font-size: 40px;
+    font-family: "Playwrite AU SA";
+}
+.back-button {
+    text-align: center;
+    position: fixed;
+    left: 10%;
+    bottom: 10%;
+    color: rgb(255, 188, 188);  
     background-color: rgb(52, 134, 228);
     font-size: 40px;
     font-family: "Playwrite AU SA";
