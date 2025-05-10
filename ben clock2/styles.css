@@ -10,7 +10,7 @@ body {
     height: 100%;
     place-items: center;
     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
-    animation: animate 0.0005s linear infinite;
+    animation: animate 5s linear infinite;
 }
 
 .wrapper {
